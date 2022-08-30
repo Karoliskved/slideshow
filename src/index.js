@@ -6,10 +6,6 @@ const radioButtons = document.querySelectorAll('.selectSlide');
 let index = document.querySelector('input[name="selectSlide"]:checked').value;
 let intervalID = window.setInterval(rightClick, 5000);
 
-function checkWeatherAPI() {
-  // go check API
-  console.log('checking weather API');
-}
 radioButtons.forEach((radio) => {
   radio.onchange = () => {
     console.log(radio.value);
